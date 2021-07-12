@@ -1,0 +1,46 @@
+//- page-a.pug
+extends base.pug
+
+block scripts
+  script(src='/static/code.js')
+block  style
+    style
+      include ../static/code.css
+
+block content
+    section#home
+      h1 Welcome To Programming Language
+      p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde mollitia praesentium voluptates explicabo odio voluptatem, cum architecto vel. Nesciunt veniam id, porro libero recusandae praesentium perferendis, consequuntur nostrum, perspiciatis non modi quam. Necessitatibus, amet!
+
+    section#courses
+      h1 Our Courses
+      p Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, et quidem. Sequi, vero nostrum necessitatibus deserunt veniam quod libero unde mollitia magnam aspernatur tenetur quaerat ullam a iste culpa excepturi labore facilis natus vel ut?
+      div.box
+        ul
+          li.box1
+            img(src="../static/img/python.png", alt="Python", srcset="")
+            p #[a(href=" ") Python Tutorial]
+          li.box1
+            img(src="../static/img/java.png", alt="Java", srcset="")
+            p #[a(href="") Java Tutoral]
+          li.box1
+            img(src="../static/img/c++.png", alt="C++", srcset="")
+            p #[a(href="") C++ Tutorial]
+          li.box1
+            img(src="../static/img/web.png", alt="Web", srcset="")
+            p #[a(href="") Web Tutorial]
+
+    Section#client
+      h1 Our Clients
+      p Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt, error atque expedita maiores sit porro aliquid itaque beatae quam ad dolorem aut provident optio consequatur aliquam modi suscipit minima omnis excepturi? Quos, nihil aliquam.  
+
+      div.box2
+          ul
+            li.box3
+              img(src="../static/img/logo1.png", alt="Python", srcset="")
+            li.box3
+              img(src="../static/img/logo2.png", alt="Java", srcset="")
+            li.box3
+              img(src="../static/img/logo3.png", alt="C++", srcset="")
+            li.box3
+              img(src="../static/img/messa.png", alt="Web", srcset="")

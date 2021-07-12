@@ -1,0 +1,39 @@
+//- page-a.pug
+extends base.pug
+
+block scripts
+  script(src='/static/code.js')
+block  style
+    style
+      include ../static/code.css
+
+block content
+    Section#contact
+      h1 Registor Your Account
+      form(action="", method="post" class="form")
+        label(for="fname") First Name 
+        input(type="text" name="fname" placeholder="Enter your First Name" class="input")
+        label(for="lname") Last First Name 
+        input(type="text" name="lname" placeholder="Enter your Last Name" class="input")
+        label(for="date") Date of Birth 
+        input(type="date" name="date" placeholder="Enter your Last Date of Birth" class="input")
+        div.gender
+          | Gender: 
+          input(type="radio" name="gender" placeholder="Enter your Last Gender")
+          label(for="gender") Male
+          input(type="radio" name="gender" placeholder="Enter your Last Gender")
+          label(for="gender") FeMale
+          input(type="radio" name="gender" placeholder="Enter your Last Gender")
+          label(for="gender") Other
+        label(for="text") Country 
+        input(type="text" name="text" placeholder="Enter your Last Country" class="input")
+        label(for="email") Email-ID 
+        input(type="email" name="email" placeholder="Enter your Last Email-ID" class="input")
+        label(for="password") Password 
+        input(type="password" name="password" placeholder="Enter your Last Password" class="input")
+        div.agree
+          input(type="Radio" name="radio")
+          label(for="radio") I agree to the Term Of Use
+        div.button
+          button(type="submit" class="btn") Submitt
+          button(type="reset" class="btn") Reset 

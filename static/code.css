@@ -1,0 +1,229 @@
+*{
+    margin: 0px;
+}
+
+/* Nevigation Section  */
+#navbar{
+    display: flex;
+    padding: 10px;
+    background-color: rgb(255, 112, 10);
+    
+}
+
+.logo{
+    display: flex;
+}
+img{
+    height: 50px;
+    align-items: center;
+}
+#navbar ul{
+    display: flex;
+    align-items: center;
+}
+#navbar li{
+    list-style: none;
+}
+#navbar li:hover{
+    background-color: white;
+    border-radius: 15px;
+    
+}
+#navbar li a{
+    text-decoration: none;
+    padding:15px;
+    font-size: 2rem;
+    color: white;
+    font-weight: bolder;
+}
+#navbar li a:hover{
+    color: black;
+    font-weight: bolder;
+}
+
+/* Contenar Section  */
+#home{
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    align-items: center;
+    justify-content: center;
+    background: url('/static/img/bg.jpg')no-repeat center center/cover;
+}
+#home h1{
+    font-size: 3rem;
+    color: white;
+    font-weight: bolder;
+    padding: 10px;
+    margin-bottom: 40px;
+}
+#home p{
+    font-size:1.5rem;
+    color: white;
+    font-weight: bolder;
+    padding: 15px 250px;
+    text-align: center;
+}
+
+/* Courses Section */
+#courses{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+#courses h1{
+    font-size: 2.5rem;
+    font-weight: bolder;
+    margin: 5px;
+}
+#courses p{
+    font-size: 1.5rem;
+    font-weight: bolder;
+    margin: 5px;
+    padding: 5px 100px;
+}
+.box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+ul{
+    display: flex;
+    flex-direction: row;
+}
+.box ul li{
+    border: 2px solid rgb(0, 0, 0);
+    height: 270px;
+    width: 270px;
+    list-style: none;
+    margin: 15px;
+    padding: 5px;
+    background-color: rgb(255, 183, 170);
+}
+.box ul li img{
+
+    align-items: center;
+    justify-content: center;
+    height:200px;
+    /* margin-left: 10px; */
+}
+.box1 p a{
+    text-decoration: none;
+    font-size: 20px;
+}
+/* Client Section */
+#client{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+#client h1{
+    font-size: 2.5rem;
+    font-weight: bolder;
+    margin: 5px;
+}
+#client p{
+    font-size: 1.5rem;
+    font-weight: bolder;
+    margin: 5px;
+    padding: 5px 100px;
+}
+.box2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+ul{
+    display: flex;
+    flex-direction: row;
+}
+.box2 ul li{
+    height: 230px;
+    width: 270px;
+    list-style: none;
+    margin: 15px;
+    padding: 5px;
+}
+.box2 ul li img{
+
+    align-items: center;
+    justify-content: center;
+    height:200px;
+    /* margin-left: 10px; */
+}
+/* .box3 p a{
+    text-decoration: none;
+    font-size: 20px;
+} */
+
+#contact{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background: url("static/img/contact.jpg")no-repeat center center/cover;
+    align-items: center;
+    justify-content: center;
+}
+#contact h1{
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 100%; 
+    margin-top: 10px;
+    align-items: center;
+}
+.input{
+    width:290px;
+    margin: 4px 0px;
+    font-size:20px;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+}
+label{
+    font-size: 1.5rem;
+    margin: 4px;
+    font-weight: bold;
+}
+.gender{
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+input gender{
+    width:0px;
+}
+.button{
+    margin: 4px;
+}
+.btn{
+    font-weight: bold;
+    width:90px;
+    text-align: center;
+    margin:10px;
+    padding:4px;
+    border: none;
+    border-radius: 10px;
+    background-color: white;
+    font-size: 20px;
+}
+.btn:hover{
+    background-color: rgb(2, 2, 2);
+    color: rgb(255, 183, 170);
+}
+
+/* Footer Section */
+#footer{
+    display: flex;
+    background-color: rgb(233, 97, 0);
+    color: white;
+    font-weight: bolder;
+    font-size: 1.5rem;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+}

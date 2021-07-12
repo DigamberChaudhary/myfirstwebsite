@@ -1,0 +1,20 @@
+//- layout.pug
+html
+  head
+    title learn Programming Language
+    block scripts
+    block style
+    
+  body
+    nav#navbar
+      ul
+        div.logo
+          img(src="../static/img/logo.png", alt="ProgrammingLanguage")
+        li #[a(href="/") Home]
+        li #[a(href="/") About]
+        li #[a(href="/") Courses]
+        li #[a(href="/") Clients]
+        li #[a(href="/contact") Contact Us]
+    block content
+    section#footer
+      | CopyRight &copy | www.programinglanguage.com All are Reserved

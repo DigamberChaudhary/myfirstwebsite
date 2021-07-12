@@ -1,0 +1,88 @@
+doctype html
+html
+  head
+    style
+      include ../static/code.css
+  body
+    nav#navbar
+      ul
+        div.logo
+          img(src="../static/img/logo.png", alt="ProgrammingLanguage")
+        li #[a(href="/") Home]
+        li #[a(href="/") About]
+        li #[a(href="/") Courses]
+        li #[a(href="/") Clients]
+        li #[a(href="/") Contact Us]
+
+    section#home
+      h1 Welcome To Programming Language
+      p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde mollitia praesentium voluptates explicabo odio voluptatem, cum architecto vel. Nesciunt veniam id, porro libero recusandae praesentium perferendis, consequuntur nostrum, perspiciatis non modi quam. Necessitatibus, amet!
+
+    section#courses
+      h1 Our Courses
+      p Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, et quidem. Sequi, vero nostrum necessitatibus deserunt veniam quod libero unde mollitia magnam aspernatur tenetur quaerat ullam a iste culpa excepturi labore facilis natus vel ut?
+      div.box
+        ul
+          li.box1
+            img(src="../static/img/python.png", alt="Python", srcset="")
+            p #[a(href=" ") Python Tutorial]
+          li.box1
+            img(src="../static/img/java.png", alt="Java", srcset="")
+            p #[a(href="") Java Tutoral]
+          li.box1
+            img(src="../static/img/c++.png", alt="C++", srcset="")
+            p #[a(href="") C++ Tutorial]
+          li.box1
+            img(src="../static/img/web.png", alt="Web", srcset="")
+            p #[a(href="") Web Tutorial]
+
+    Section#client
+      h1 Our Clients
+      p Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt, error atque expedita maiores sit porro aliquid itaque beatae quam ad dolorem aut provident optio consequatur aliquam modi suscipit minima omnis excepturi? Quos, nihil aliquam.  
+
+      div.box2
+          ul
+            li.box3
+              img(src="../static/img/logo1.png", alt="Python", srcset="")
+            li.box3
+              img(src="../static/img/logo2.png", alt="Java", srcset="")
+            li.box3
+              img(src="../static/img/logo3.png", alt="C++", srcset="")
+            li.box3
+              img(src="../static/img/messa.png", alt="Web", srcset="")
+    
+    Section#contact
+      h1 Registor Your Account
+      form(action="", method="post" class="form")
+        label(for="fname") First Name 
+        input(type="text" name="fname" placeholder="Enter your First Name" class="input")
+        label(for="lname") Last First Name 
+        input(type="text" name="lname" placeholder="Enter your Last Name" class="input")
+        label(for="date") Date of Birth 
+        input(type="date" name="date" placeholder="Enter your Last Date of Birth" class="input")
+        div.gender
+          | Gender: 
+          input(type="radio" name="gender" placeholder="Enter your Last Gender")
+          label(for="gender") Male
+          input(type="radio" name="gender" placeholder="Enter your Last Gender")
+          label(for="gender") FeMale
+          input(type="radio" name="gender" placeholder="Enter your Last Gender")
+          label(for="gender") Other
+        label(for="text") Country 
+        input(type="text" name="text" placeholder="Enter your Last Country" class="input")
+        label(for="email") Email-ID 
+        input(type="email" name="email" placeholder="Enter your Last Email-ID" class="input")
+        label(for="password") Password 
+        input(type="password" name="password" placeholder="Enter your Last Password" class="input")
+        div.agree
+          input(type="Radio" name="radio")
+          label(for="radio") I agree to the Term Of Use
+        div.button
+          button(type="submit" class="btn") Submitt
+          button(type="reset" class="btn") Reset 
+        
+
+    section#footer
+      | CopyRight &copy | www.programinglanguage.com All are Reserved
+    script
+      include ../static/code.js
